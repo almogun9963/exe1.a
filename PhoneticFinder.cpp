@@ -76,7 +76,7 @@ int mistakes(char c1,char c2)
     {
         return 1;
     }
-    if(a==b)
+    if(c1 == c2)
     {
         return 1;
     }

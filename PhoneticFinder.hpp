@@ -1,9 +1,18 @@
 #pragma once
+#include <stdexcept>
 #include <string>
-using namespace std;
+#include <iostream>
 
-class word_not_exist{};
-namespace phonetic {
-    string find(string a, string b);
-}
-int mistakes(char c1, char c2);
+namespace phonetic
+{
+
+    std::string toLowerCase(std::string s);
+
+    bool isLike(std::string s1,std::string s2);
+
+    bool isLike(char c1,char c2);
+
+    std::string find(std::string s1, std::string s2);
+
+    std::string getword(int start,int end, std::string s);
+};
